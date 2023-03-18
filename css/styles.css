@@ -1,0 +1,113 @@
+:root{
+/* --main-color: #009ad8; */
+--text-color: #fff;
+--background-color: #0D0D0D;
+--secondary-color: #f9f6f6ca ;
+--footer-background-color: #262936;
+}
+
+body{
+    background: var(--background-color);
+}
+
+.progress-bar{
+    background: var(--background-color);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.progress-bar i{
+    color: var(--text-color);
+}
+.progress-bar-mini{
+    position: absolute;
+    z-index: 9;
+    background: var(--background-color);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.side-nav{
+    background: var(--footer-background-color);
+    position: fixed;
+    left: -240px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 320px; /*temporaryyyyy*/
+    text-align: left;
+    /* padding: 1em; */
+    row-gap: 1em;
+    color: var(--text-color);
+    z-index: 9;
+
+}
+/* .nav-tabs{
+    width: 0;
+} */
+.nav-tabs .list-unstyled li{
+    padding-top: 1em;
+    cursor: pointer;
+    top: 300px;
+    position: relative;
+}
+.nav-header{
+    background: var(--text-color);
+    color: var(--background-color);
+}
+.logo{
+    width: 3em;
+}
+
+.top, .icons, .nav-header .fa-solid.fa-xmark{
+    cursor: pointer;
+}
+
+.item-overlay {
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background: var(--secondary-color);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.col-md-3.col-sm-12:hover .item-overlay{
+    top: 0;
+}
+.details{
+    color: var(--text-color);
+}
+.recipes > span{
+
+    padding: 0 0.5em;
+}
+.search .col-md-6 input, .areas, .ingredients{
+    color: var(--text-color);
+}
+.areas .col-md-3, .ingredients .col-md-3{
+    cursor: pointer;
+}
+
+/*form*/
+.alert-name, .alert-email, .alert-password{
+    display: none;
+}
+.incorrect-input,.not-found-msg{
+    display: none;
+}
+
+
