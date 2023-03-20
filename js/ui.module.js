@@ -231,6 +231,7 @@ export class Ui{
             }
 
         displayContactForm(square){
+            this.mealsRow.innerHTML = "";
                 //     closeNav();
                 //   searchRow.innerHTML = "";
                 //   let temp = `
@@ -265,7 +266,7 @@ export class Ui{
                 //this.form = new ContactForm();
                 let temp = square
                 
-                  this.mealsRow.innerHTML= temp;
+                  this.mealsRow.appendChild(temp);
             }
 
         displaySearchForm(){
